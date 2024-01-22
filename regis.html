@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Image/logo_gdsc.jpg">
+  <link rel="stylesheet" href="regis.css">
+  <title>R_E_G_I_S_T_R_A_T_I_O_N</title>
+</head>
+<body>
+
+  <video autoplay muted loop id="Video">
+    <source src="Image/background.mp4" type="video/mp4">
+  </video>
+  <div id="preloader"></div>
+  <div class="Container">
+    <div class="logos"><div class="gdsc"><img src="Image/logo_gdsc.jpg" id="gdsc_logo" alt=""><p class="clubs">Google Developer Student Clubs</p></div><div class="cce"><img src="Image/logo_cce.png" alt="" id="cce_logo"><p class="clubs">Community  Of College Enterprenuers</p></div>
+    </div>
+    <form action="" method="post">
+      <h2>Registration</h2>
+      <div class="content">
+        <div class="input_box">
+          <label for="name">Full Name: </label>
+          <input type="text" placeholder="Enter full name." name="name" required>
+        </div>
+        <br>
+
+        <div class="gender">
+          <label for="gender">Gender:</label><br>
+          <div class="gender_option">
+          <input type="radio" name="gender" id="male">
+          <label for="gender">Male</label><br>
+          <input type="radio" name="gender" id="female">
+          <label for="gender">Female</label><br>
+          <input type="radio" name="gender" id="non-binary">
+          <label for="gender">Non-Binary</label><br>
+          <input type="radio" name="gender" id="nope">
+          <label for="gender">Prefer Not To Say</label>
+        </div>
+      </div>
+        <br>
+        <div class="input_box" >
+          <label for="age">Enter Your Date of Birth</label>
+          <input type="date"  id="date" required>
+          </select>
+        </div>
+        <div class="input_box">
+          <label for="email">Email ID: </label>
+          <input type="email" placeholder="Enter your valid Email Address." name="email" required>
+        </div>
+        <div class="input_box">
+          <label for="phone">Phone Number: </label>
+          <input type="tel" placeholder="Enter your Phone Number." name="name" required>
+        </div>
+        <div class="input_box">
+          <label for="School">University/School: </label>
+          <input type="text" placeholder="Enter the name of your Institution you are currently enrolled in." name="name" required>
+        </div>
+        <div class="team">
+          <label for="team">Are you already in a Team?</label><br><br>
+          <div class="Team_option">
+          <input type="radio" name="team" id="have">
+          <label for="team">I am Already in a Team</label><br>
+          <input type="radio" name="team" id="dont_have">
+          <label for="team">I am NOT in a Team yet and I need one</label><br>
+          <input type="radio" name="team" id="solo">
+          <label for="team">I want to go SOLO</label><br>
+        </div>
+        </div>
+        <br>
+
+        <div class="input_box">
+          <label for="diet">Dietery Restriction:</label>
+          <textarea id="text_area" rows="3" placeholder="Enter any Dietery Restriction You Have."></textarea>
+        </div>
+
+<div class="alert">
+  <p>
+    By clicking Register, you agree to our <a href="#">Terms</a> & <a href="#">Privacy Policy</a>. You will recive a confirmation email with details to follow up. If you didnt recieve the email, Please contact <a href="#" id="gdsc">Google Developers Student Club at Truman</a>
+  </p>
+</div>
+
+    <div class="button_container">
+      <button>REGISTER</button>
+    </div>
+      </div>
+    </form>
+  </div>
+  
+
+<script>
+var loader = document.getElementById('preloader');
+
+async function loadData() {
+  await sleep(5);
+  fadeOut(loader);
+}
+
+async function fadeOut(element) {
+  var opacity = 1;
+  var interval = setInterval(function () {
+    if (opacity <= 0.1) {
+      clearInterval(interval);
+      element.style.display = 'none';
+    }
+    element.style.opacity = opacity;
+    opacity -= opacity * 0.1;
+  }, 50);
+}
+
+async function sleep(seconds) {
+  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+}
+
+loadData();
+
+</script>
+
+
+
+</body>
+</html>

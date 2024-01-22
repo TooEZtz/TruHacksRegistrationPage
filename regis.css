@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:cursive;
+  box-sizing: border-box;
+
+}
+
+#preloader{
+  background: #201E1E url(Image/loading.gif) no-repeat center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+body{
+  display: flex;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#Video{
+  z-index: -1;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.Container{
+
+  max-width: 1800px;
+  height: auto;
+  padding: 28px;
+  margin-top: 250px;
+  border-radius: 10px;
+  overflow:hidden;
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 15px 20px rgba(255, 48, 4, 0.3);
+  border: solid 1px silver;
+}
+
+.logos{
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+.logos img{
+  margin-left: 40%;
+}
+
+#gdsc_logo, #cce_logo{
+  width:50px;
+}
+
+.gdsc:hover{
+  color: #104547;
+  cursor: pointer;
+  font-size: 25px;
+  
+}
+.cce:hover{
+  color: #00BEF2;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.clubs{
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2{
+  box-sizing: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF8BD;
+  padding-bottom: 8px;
+  border-bottom: 1px solid silver;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px ;
+  margin: 1%;
+}
+
+.input_box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.input_box:nth-child(2n){
+  justify-content: end;
+}
+
+.input_box label{
+display: flex;
+width: 95%;
+color: silver ;
+font-weight: bold;
+margin: 5px 0;
+margin-bottom: 15px;
+}
+.gender{
+  width: 95%;
+color: silver ;
+font-weight: bold;
+margin: 5px 0;
+margin-bottom: 15px;
+}
+
+.team{
+width: 95%;
+color: silver ;
+font-weight: bold;
+margin-bottom: 10px;
+
+}
+.input_box input{
+  height: 40px;
+  width: 95%;
+  padding: 0 10px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #151515;
+  color: #FFF8BD;
+}
+
+.input_box input:is(:focus,:valid){
+  box-shadow:0 3px 6px rgba(0,0,0,0.2) ;
+}
+.gender_option label, .Team_option label{
+padding:0 20px 0 5px;
+font-size: 14px;
+}
+
+.gender_option, .Team_option{
+  color: gainsboro;
+  padding-left: 10px;
+  
+}
+textarea{
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #151515;
+  color: #FFF8BD;
+  width: 95%;
+}
+
+.alert{
+  color: silver ;
+  font-style: italic;
+}
+
+.button_container{
+  flex-basis:100vh;
+  padding-top: 50px;
+  padding-left: 40%;
+}
+button{
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: #FFF8BD;
+}
+
+button:hover{
+  box-shadow: 0 15px 20px rgba(255, 48, 4, 0.8);
+  transition: box-shadow 0.5s;
+  background-color: cadetblue;
+}
+
+#text_area{
+  width: 800px
+}
+#gdsc{
+  color: #0f9d58;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color:#104547;
+}
+#gdsc:hover, a:hover{
+  color: #f4b400;
+}
+
+input:hover, textarea:hover{ 
+  box-shadow: 15px 15px 20px rgba(222, 177, 17, 0.74);
+  transition: box-shadow 0.2s;
+}
+
+#date{
+  max-width: 250px;
+  text-align: center;
+  text-decoration: none;
+  font-style: italic;
+}
+
+textarea::placeholder{
+  text-align: justify;
+  text-wrap:nowrap;
+}
+
+input::placeholder{
+  text-align: justify;
+  text-wrap:nowrap;
+}
+
